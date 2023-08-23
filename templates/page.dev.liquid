@@ -1,6 +1,20 @@
-<h1>Hello bangladesh</h1>
+<h1 class="heading">Hello bangladesh</h1>
 <h1>hey bro</h1>
 
 {% assign myString = "hellow world" %}
 {{ myString }}
-<h3>hello from vs code</h3>
+<h3 class="heading">hello from vs code</h3>
+
+{% # object in liquid %}
+{{ "This is a Object" | downcase }}
+{{ "This is a Object" | capitalize }}
+{{ "This is a Object" | color_brightness }}
+
+
+<style>
+  .heading {
+    color: red;
+    font-size: larger;
+
+  }
+</style>
