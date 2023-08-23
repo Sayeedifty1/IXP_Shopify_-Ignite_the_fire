@@ -10,7 +10,15 @@
 {{ "This is a Object" | capitalize }}
 {{ "This is a Object" | color_brightness }}
 
+{% assign name = "Ifty" %}
 
+{{ name | upcase }}
+
+{% {% assign number1 = 10 %}
+
+{% {% assign number2 = 20 %}
+
+<p>Addition is {{ number1 | plus: number2 }}</p>
 <style>
   .heading {
     color: red;
