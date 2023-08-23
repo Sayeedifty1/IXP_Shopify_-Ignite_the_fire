@@ -20,9 +20,38 @@
 
 <p>Addition is {{ number1 | plus: number2 }}</p>
 <p>Substraction is {{ number1 | minus: number2 }}</p>
+
+{{ % #if else condition % }}
+
+{% assign num = 85 %}
+{% if num >= 90 %}
+  <p>
+    Grade: A</p>
+{% elsif num >= 80 %}
+  <p>
+    Grade: B
+  </p>
+{% elsif num >= 70 %}
+  <p>
+    Grade: C
+  </p>
+{% elsif num >= 60 %}
+  <p>
+    Grade: D
+  </p>
+{% else %}
+  <p>
+    Grade: F
+  </p>
+{% endif %}
 <style>
   .heading {
     color: red;
+    font-size: larger;
+
+  }
+  p {
+    color: green;
     font-size: larger;
 
   }
