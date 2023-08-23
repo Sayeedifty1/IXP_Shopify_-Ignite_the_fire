@@ -14,11 +14,12 @@
 
 {{ name | upcase }}
 
-{% {% assign number1 = 10 %}
+{% assign number1 = 10 %}
 
-{% {% assign number2 = 20 %}
+{% assign number2 = 20 %}
 
 <p>Addition is {{ number1 | plus: number2 }}</p>
+<p>Substraction is {{ number1 | minus: number2 }}</p>
 <style>
   .heading {
     color: red;
